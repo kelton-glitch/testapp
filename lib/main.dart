@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,9 +19,12 @@ class MyApp extends StatelessWidget {
         ),
      
          body: Center(
-        child: Column(
+        child: Column(          
           children: <Widget>[
-            Image.asset('images/me.jpeg'),
+            Image.asset('images/me.jpeg',
+            height: 180,
+            width:80,
+            ),            
           ],
         ),
       ),
