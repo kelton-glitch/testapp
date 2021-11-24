@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,26 +11,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-      home: Scaffold (
+      home: Scaffold(
         appBar: AppBar(
-      title: Text('About Me'),
+          title: Text('About Me'),
         ),
-     
-         body: Center(
-        child: Column(          
-          children: <Widget>[
-            Image.asset('images/me.jpeg',
-            height: 180,
-            width:80,
-            ),            
-          ],
+        body: Center(
+          child: Container(
+            height: 200,
+            width: 100,
+            child: Image.asset(
+              'images/me.jpeg',
+            ),
+          ),
         ),
       ),
-      ),
-
-     
-    
     );
   }
 }
@@ -55,9 +48,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
-
-  
   int _counter = 0;
 
   void _incrementCounter() {
