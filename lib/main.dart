@@ -21,6 +21,8 @@ class MyApp extends StatelessWidget {
             width: 100,
             child: Image.asset(
               'images/me.jpeg',
+              height: 70,
+              fit: BoxFit.cover,
             ),
           ),
         ),
