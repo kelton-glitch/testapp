@@ -15,18 +15,17 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('About Me'),
         ),
-        body: Center(
-          child: Container(
-            height: 200,
-            width: 100,
-            child: Image.asset(
+        body: Column(
+            children: <Widget>[ Image.asset(
               'images/me.jpeg',
               height: 70,
               fit: BoxFit.cover,
             ),
+            ],
           ),
         ),
-      ),
+      
+      
     );
   }
 }
