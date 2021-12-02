@@ -16,11 +16,14 @@ class MyApp extends StatelessWidget {
           title: Text('About Me'),
         ),
         body: Column(
-            children: <Widget>[ Image.asset(
+            children: <Widget>[ 
+
+              Image.asset(
               'images/me.jpeg',
-              height: 200,
-              fit: BoxFit.cover,
-            ),
+              height:300,
+              width:100,
+              ),
+              
             ],
           ),
         ),
@@ -28,6 +31,8 @@ class MyApp extends StatelessWidget {
       
     );
   }
+
+  String get newMethod => 'images/me.jpeg';
 }
 
 class MyHomePage extends StatefulWidget {
