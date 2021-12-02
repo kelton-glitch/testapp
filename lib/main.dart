@@ -15,24 +15,26 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('About Me'),
         ),
-        body: Column(
+        body: Center(
+        child: Column(
+          
             children: <Widget>[ 
 
               Image.asset(
               'images/me.jpeg',
-              height:300,
-              width:100,
+              height:400,
+              width:170,
               ),
               
             ],
           ),
         ),
+      ),
       
       
     );
   }
 
-  String get newMethod => 'images/me.jpeg';
 }
 
 class MyHomePage extends StatefulWidget {
