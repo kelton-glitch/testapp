@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         body: Column(
             children: <Widget>[ Image.asset(
               'images/me.jpeg',
-              height: 90,
+              height: 200,
               fit: BoxFit.cover,
             ),
             ],
