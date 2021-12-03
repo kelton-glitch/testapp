@@ -7,13 +7,21 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
+  get center => null;
+
+
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+     
       home: Scaffold(
+        
         appBar: AppBar(
-          title: Text('About Me'),
+          title: Text('About Me',
+          textAlign: center,
+          ),
         ),
         body: Center(
         child: Column(
@@ -21,15 +29,19 @@ class MyApp extends StatelessWidget {
             children:  <Widget>[ 
 
               Image.asset(
-              'images/me.jpeg',
+              'images/IMG-20200710-WA0111.jpg',
               height:400,
               width:170,
               ),
+              const Text('Kamgo Njomo Elton'),
+              const Text('+237 673907638'),
+              const Text("    I am a level 400 student at the faculty of engineering and technology, a lover of art and an instumentalist"),
               
             ],
           ),
         ),
       ),
+      
       
       
     );
@@ -102,15 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
-          children:<Widget>[
-                Builder(
-                  builder: (context) {
-                    return const Text(
-                      'Thou hast pushed the button this many times:',
-                    );
-                  }
-                ),
-              ],
+          
             ),
           
         ),
