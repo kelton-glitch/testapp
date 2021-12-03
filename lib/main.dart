@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         body: Center(
         child: Column(
           
-            children: <Widget>[ 
+            children:  <Widget>[ 
 
               Image.asset(
               'images/me.jpeg',
@@ -102,17 +102,19 @@ class _MyHomePageState extends State<MyHomePage> {
           // axis because Columns are vertical (the cross axis would be
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Thou hast pushed the button this many times:',
+          children:<Widget>[
+                Builder(
+                  builder: (context) {
+                    return const Text(
+                      'Thou hast pushed the button this many times:',
+                    );
+                  }
+                ),
+              ],
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
+          
         ),
-      ),
+      
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
