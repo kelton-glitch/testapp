@@ -15,20 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      Theme(
-  data: ThemeData.from(
-    colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.amber),
-  ),
-  child: Builder(
-    builder: (BuildContext context) {
-      return Container(
-        width: 100,
-        height: 100,
-        color: Theme.of(context).colorScheme.primary,
-      );
-    },
-  ),
-),
+      
      
       home: Scaffold(
         
