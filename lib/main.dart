@@ -24,8 +24,8 @@ class MyApp extends StatelessWidget {
           textAlign: center,
           ),
         ),
-        body: Center(
-        child: Column(
+        body: Column(
+        
           
             children:  <Widget>[ 
 
